@@ -22,7 +22,7 @@ A subsequent image (`bard_bij_zonsondergang_met_gitaar.png`) was generated accid
 
 ## Asset status
 
-The approved image is retained as a file in the Imagined Records ChatGPT working conversation. **It is not yet committed to this GitHub repository.** Do not claim the website has switched to the approved face until the original image file has been uploaded and the site changed and verified.
+The original approved portrait is committed to this repository as **`public/assets/oliver-w-portrait.png`**. The artist page (`public/oliver-w/index.html`) uses that exact file. Preserve this file as the canonical reference for future visuals.
 
 ## Artist context
 

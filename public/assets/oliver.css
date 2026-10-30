@@ -35,3 +35,34 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
 
 /* Better song status wrapping on narrow screens */
 @media(max-width:480px){.status{line-height:1.8}.photo span{max-width:calc(100% - 48px);line-height:1.6}}
+
+/* Canonical Oliver W. portrait and refined artist landing */
+.page .hero{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)}
+.page .heroText{padding-top:94px;padding-bottom:90px}
+.page .photo{overflow:hidden;min-height:660px;isolation:isolate}
+.page .photo img{object-fit:cover;object-position:50% 42%;filter:saturate(.88) brightness(.91)}
+.page .photo::after{content:"";pointer-events:none;position:absolute;inset:0;background:linear-gradient(180deg,transparent 63%,rgba(13,12,11,.55));}
+.page .photo span{z-index:1;background:rgba(19,18,17,.82);border:1px solid rgba(242,238,230,.16);padding:13px 16px}
+.page .heroEpLink{display:inline-flex;align-items:center;gap:14px;align-self:flex-start;margin-top:32px;padding:0 0 10px;border-bottom:1px solid #a58c6a;font-size:10px;font-weight:700;letter-spacing:.16em;color:#e6d6be;text-decoration:none}
+.page .heroEpLink span{font-size:18px;line-height:1;color:#a58c6a}
+.page .heroEpLink:hover{color:white}
+.page .ep{scroll-margin-top:28px}
+@media(max-width:800px){
+ .page .hero{grid-template-columns:1fr}
+ .page .heroText{padding:70px 7% 68px}
+ .page .photo{min-height:600px;height:70svh;max-height:770px}
+ .page .photo img{object-position:center 35%}
+ .page .heroEpLink{margin-top:25px}
+}
+@media(max-width:480px){
+ .page .heroText{padding:60px 7% 55px}
+ .page .hero h1{font-size:clamp(96px,26vw,125px);margin:26px 0 30px}
+ .page .genre{margin-top:32px;line-height:1.9}
+ .page .tag{font-size:clamp(25px,7vw,34px)}
+ .page .photo{min-height:460px;height:66svh;max-height:630px}
+ .page .photo img{object-position:center 35%}
+ .page .photo span{left:18px;bottom:18px;font-size:8px}
+ .page .intro{padding-top:78px;padding-bottom:80px}
+ .page .ep{padding-top:85px;padding-bottom:83px}
+ .page .quote{padding-top:90px;padding-bottom:90px}
+}
