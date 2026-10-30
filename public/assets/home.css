@@ -72,3 +72,11 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
  .hero h1{font-size:clamp(42px,11.6vw,52px)}
  .heroInner{padding-top:38px;padding-bottom:65px}
 }
+
+/* Vector arrows instead of iOS emoji glyphs */
+.site .arrowIcon{display:inline-block;vertical-align:middle;width:15px;height:15px;color:#c9b08c;flex:none}
+.site .outlineButton .arrowIcon{width:17px;height:17px}
+.site .heroArtistLink .arrowIcon,.site .artistLink .arrowIcon{width:16px;height:16px}
+.site .artistArrow .arrowIcon{width:27px;height:27px}
+.site .navLink .arrowIcon{margin-left:9px;width:13px;height:13px}
+.site .outlineButton:hover .arrowIcon{color:#151515}
