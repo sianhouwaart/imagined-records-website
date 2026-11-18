@@ -157,3 +157,11 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
 .artistVisual--yoru::before{z-index:2;pointer-events:none}
 .artistVisual--yoru .artistVisualShade{position:absolute;inset:0;z-index:1}
 .artistVisual--yoru .imageTag,.artistVisual--yoru .artistVisualBottom{position:relative;z-index:3}
+
+/* YORU visual corrections: keep the approved portrait's entire head in frame. */
+.artistVisual--yoru .yoruRosterPhoto{object-position:center top;object-fit:contain;background:#111923}
+.artistVisual--yoru{background:#111923}
+.artistVisual--yoru::before{display:none}
+.artistVisual--yoru .artistVisualShade{background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(4,7,12,.06) 50%,rgba(4,7,12,.91) 100%)}
+.artistCard--yoru .artistVisualBottom strong{font-size:clamp(54px,5.5vw,88px)}
+@media(max-width:480px){.artistCard--yoru .artistVisualBottom strong{font-size:clamp(53px,12vw,72px)}}
