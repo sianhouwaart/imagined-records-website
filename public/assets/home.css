@@ -165,3 +165,20 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
 .artistVisual--yoru .artistVisualShade{background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(4,7,12,.06) 50%,rgba(4,7,12,.91) 100%)}
 .artistCard--yoru .artistVisualBottom strong{font-size:clamp(54px,5.5vw,88px)}
 @media(max-width:480px){.artistCard--yoru .artistVisualBottom strong{font-size:clamp(53px,12vw,72px)}}
+
+/* Final YORU crop correction: reserve breathing room above the entire photo. */
+.artistVisual--yoru{display:block;background:#101720}
+.artistVisual--yoru .yoruRosterPhoto{
+ position:absolute!important;
+ inset:auto!important;
+ top:0!important;left:0!important;
+ width:100%!important;height:100%!important;
+ object-fit:contain!important;
+ object-position:center center!important;
+ padding:34px 0 0!important;
+ box-sizing:border-box!important;
+ transform:none!important;
+}
+.artistVisual--yoru:hover .yoruRosterPhoto,
+.artistVisual--yoru:focus-visible .yoruRosterPhoto{transform:none!important}
+@media(max-width:480px){.artistVisual--yoru .yoruRosterPhoto{padding-top:42px!important}}
