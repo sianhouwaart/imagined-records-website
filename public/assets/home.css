@@ -143,3 +143,10 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
  .artistTrackPreview span{font-size:17px}
  .artistDisclosure{font-size:10px;margin-top:26px}
 }
+
+/* YORU — Brooklyn After Dark. Typographic fallback until approved portrait is in site assets. */
+.artistCard--yoru{background:#191e25}
+.artistVisual--yoru{background:radial-gradient(ellipse at 72% 23%,#334a5b 0%,transparent 46%),linear-gradient(155deg,#101722 5%,#283541 48%,#0c0e13 100%);border:1px solid #35404b}
+.artistVisual--yoru::before{content:"BROOKLYN / AFTER DARK";position:absolute;top:46%;left:8%;color:#c7b8a0;letter-spacing:.35em;font-size:clamp(10px,1.3vw,15px);opacity:.52;transform:rotate(-90deg);transform-origin:left center}
+.artistCard--yoru .artistVisualShade{background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.07) 45%,rgba(3,6,12,.9))}
+.artistCard--yoru .artistDetails h3 em{color:#c3cbd0}
