@@ -144,41 +144,22 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
  .artistDisclosure{font-size:10px;margin-top:26px}
 }
 
-/* YORU — Brooklyn After Dark. Typographic fallback until approved portrait is in site assets. */
+
+/* YORU — same portrait-first card composition as Oliver W. */
 .artistCard--yoru{background:#191e25}
-.artistVisual--yoru{background:radial-gradient(ellipse at 72% 23%,#334a5b 0%,transparent 46%),linear-gradient(155deg,#101722 5%,#283541 48%,#0c0e13 100%);border:1px solid #35404b}
-.artistVisual--yoru::before{content:"BROOKLYN / AFTER DARK";position:absolute;top:46%;left:8%;color:#c7b8a0;letter-spacing:.35em;font-size:clamp(10px,1.3vw,15px);opacity:.52;transform:rotate(-90deg);transform-origin:left center}
-.artistCard--yoru .artistVisualShade{background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.07) 45%,rgba(3,6,12,.9))}
-.artistCard--yoru .artistDetails h3 em{color:#c3cbd0}
-
-.artistVisual--yoru{position:relative;overflow:hidden}
-.artistVisual--yoru .yoruRosterPhoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;transition:transform .7s ease}
-.artistVisual--yoru:hover .yoruRosterPhoto{transform:scale(1.035)}
-.artistVisual--yoru::before{z-index:2;pointer-events:none}
-.artistVisual--yoru .artistVisualShade{position:absolute;inset:0;z-index:1}
-.artistVisual--yoru .imageTag,.artistVisual--yoru .artistVisualBottom{position:relative;z-index:3}
-
-/* YORU visual corrections: keep the approved portrait's entire head in frame. */
-.artistVisual--yoru .yoruRosterPhoto{object-position:center top;object-fit:contain;background:#111923}
-.artistVisual--yoru{background:#111923}
-.artistVisual--yoru::before{display:none}
-.artistVisual--yoru .artistVisualShade{background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(4,7,12,.06) 50%,rgba(4,7,12,.91) 100%)}
-.artistCard--yoru .artistVisualBottom strong{font-size:clamp(54px,5.5vw,88px)}
-@media(max-width:480px){.artistCard--yoru .artistVisualBottom strong{font-size:clamp(53px,12vw,72px)}}
-
-/* Final YORU crop correction: reserve breathing room above the entire photo. */
-.artistVisual--yoru{display:block;background:#101720}
-.artistVisual--yoru .yoruRosterPhoto{
- position:absolute!important;
- inset:auto!important;
- top:0!important;left:0!important;
- width:100%!important;height:100%!important;
- object-fit:contain!important;
- object-position:center center!important;
- padding:34px 0 0!important;
- box-sizing:border-box!important;
- transform:none!important;
+.artistCard--yoru .artistVisual--yoru{position:relative;display:block;overflow:hidden;background:#151e29;border:0}
+.artistCard--yoru .artistVisual--yoru::before{display:none}
+.artistCard--yoru .artistVisual--yoru img.yoruRosterPhoto{
+ position:absolute;inset:0;width:100%;height:100%;display:block;
+ object-fit:cover;object-position:center 36%;padding:0;
+ filter:saturate(.88) brightness(.91);transition:transform .7s ease
 }
-.artistVisual--yoru:hover .yoruRosterPhoto,
-.artistVisual--yoru:focus-visible .yoruRosterPhoto{transform:none!important}
-@media(max-width:480px){.artistVisual--yoru .yoruRosterPhoto{padding-top:42px!important}}
+.artistCard--yoru .artistVisual--yoru:hover img.yoruRosterPhoto,
+.artistCard--yoru .artistVisual--yoru:focus-visible img.yoruRosterPhoto{transform:scale(1.045)}
+.artistCard--yoru .artistVisualShade{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.3),transparent 38%,rgba(8,8,8,.85))}
+.artistCard--yoru .imageTag{position:absolute;z-index:2}
+.artistCard--yoru .artistVisualBottom{position:absolute;z-index:2}
+.artistCard--yoru .artistVisualBottom strong{font-size:clamp(60px,6.4vw,100px)}
+.artistCard--yoru .artistDetails h3 em{color:#c3cbd0}
+@media(max-width:800px){.artistCard--yoru .artistVisualBottom strong{font-size:clamp(64px,12vw,94px)}}
+@media(max-width:480px){.artistCard--yoru .artistVisualBottom strong{font-size:clamp(59px,13vw,77px)}}
