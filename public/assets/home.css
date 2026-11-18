@@ -150,3 +150,10 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
 .artistVisual--yoru::before{content:"BROOKLYN / AFTER DARK";position:absolute;top:46%;left:8%;color:#c7b8a0;letter-spacing:.35em;font-size:clamp(10px,1.3vw,15px);opacity:.52;transform:rotate(-90deg);transform-origin:left center}
 .artistCard--yoru .artistVisualShade{background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.07) 45%,rgba(3,6,12,.9))}
 .artistCard--yoru .artistDetails h3 em{color:#c3cbd0}
+
+.artistVisual--yoru{position:relative;overflow:hidden}
+.artistVisual--yoru .yoruRosterPhoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;transition:transform .7s ease}
+.artistVisual--yoru:hover .yoruRosterPhoto{transform:scale(1.035)}
+.artistVisual--yoru::before{z-index:2;pointer-events:none}
+.artistVisual--yoru .artistVisualShade{position:absolute;inset:0;z-index:1}
+.artistVisual--yoru .imageTag,.artistVisual--yoru .artistVisualBottom{position:relative;z-index:3}
