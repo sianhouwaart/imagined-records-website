@@ -143,3 +143,8 @@ body,.page{background:#0b0c0e;color:#f1eee8}
 .page .portraitGrid img{background:#171b1f}
 @media(max-width:800px){.page .hero{grid-template-columns:minmax(0,1fr)}.page .heroText{padding:72px 7% 65px}.page .photo{min-height:0;height:68svh;max-height:720px}.page .photo img{object-position:center 24%}}
 @media(max-width:480px){.page .hero h1{font-size:clamp(88px,23vw,125px)}.page .photo{min-height:440px;height:64svh}.page .intro h2,.page .ep h2{overflow-wrap:break-word}}
+
+/* Portrait-safe framing: show YORU's complete face at every viewport width. */
+.page .photo{background:#101316}
+.page .photo img{object-fit:contain!important;object-position:center center!important}
+.page .portraitGrid img{object-fit:contain!important;object-position:center center!important}
