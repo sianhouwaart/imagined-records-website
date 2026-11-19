@@ -66,3 +66,27 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
  .page .ep{padding-top:85px;padding-bottom:83px}
  .page .quote{padding-top:90px;padding-bottom:90px}
 }
+
+
+/* Imagined Records — cinematic editorial artist system */
+:root{--background:#0b0c0e;--foreground:#f1eee8;--accent:#c6a77d}
+body,.page{background:#0b0c0e;color:#f1eee8}
+.page .nav{background:#0b0c0e;border-bottom:1px solid #39332e}
+.page .nav a:hover{color:#c6a77d}
+.page .hero{background:#101113;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)}
+.page .heroText{background:radial-gradient(circle at 0 40%,#242019,#101113 70%);min-width:0}
+.page .hero h1{color:#f1eee8}
+.page .hero h1 em,.page .intro h2 em,.page .ep h2 em{color:#c9b092}
+.page .eyebrow{color:#c6a77d}
+.page .photo{background:#1b1b1a;overflow:hidden}
+.page .photo img{filter:saturate(.84) brightness(.92);object-position:center 28%}
+.page .photo:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(5,5,6,.38));pointer-events:none}
+.page .photo span{z-index:2;background:rgba(9,9,9,.6)}
+.page .intro{background:#101113;border-top:1px solid #302b26}
+.page .ep{background:#18191a;border-top:1px solid #39332e}
+.page .quote{background:#101113}
+.page .transparency{background:#0e0f10}
+.page .heroEpLink{color:#e7d7c2}
+.page footer{background:#0b0c0e;border-top:1px solid #39332e}
+@media(max-width:800px){.page .hero{grid-template-columns:minmax(0,1fr)}.page .heroText{padding:72px 7% 65px}.page .photo{min-height:0;height:68svh;max-height:720px}.page .photo img{object-position:center 26%}}
+@media(max-width:480px){.page .hero h1{font-size:clamp(88px,23vw,125px)}.page .photo{min-height:440px;height:64svh}.page .intro h2,.page .ep h2{overflow-wrap:break-word}}
