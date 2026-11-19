@@ -91,6 +91,7 @@ section[id] { scroll-margin-top: 1.5rem; }
 .catalog-row:last-child { border-bottom: 1px solid #c8bcae; }
 .catalog-row h3 { font-size: clamp(2.05rem, 4vw, 4.55rem); margin-block: .2rem .35rem; }
 .catalog-row .text-link { justify-self: start; }
+.catalog-actions { display: flex; flex-wrap: wrap; gap: 0 1rem; }
 .label-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: clamp(1.25rem, 6vw, 6rem); }
 .label-grid .lead { font: 400 clamp(1.9rem, 3vw, 3rem)/1.06 var(--display); margin-bottom: 1.1rem; }
 
