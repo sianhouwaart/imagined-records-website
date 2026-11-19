@@ -199,3 +199,41 @@ body,.site{background:#0b0c0e;color:#f1eee8}
 .site .artistCard--yoru .artistVisual--yoru{background:#101316}
 .site .artistCard--yoru .artistVisual--yoru img.yoruRosterPhoto{object-fit:contain!important;object-position:center center!important;transform:none!important}
 .site .artistCard--yoru .artistVisual--yoru:hover img.yoruRosterPhoto,.site .artistCard--yoru .artistVisual--yoru:focus-visible img.yoruRosterPhoto{transform:none!important}
+
+
+/* IR Editorial System v3: shared navigation, music discovery, and accessible responsiveness */
+:root{--ir-obsidian:#0b0c0e;--ir-ivory:#f1eee8;--ir-gold:#c6a77d;--ir-line:#3b3530}
+.irNav{display:flex;align-items:center;justify-content:center;gap:clamp(12px,2vw,30px);flex-wrap:wrap}
+.irNav a{font:600 10px/1.4 'Manrope',sans-serif;letter-spacing:.13em;color:#d9d2c7;text-decoration:none;transition:color .2s}
+.irNav a:hover,.irNav a:focus-visible{color:var(--ir-gold)}
+.irArtistIndex{font-size:9px;letter-spacing:.1em;color:#b5a89a}
+.irKicker{font:700 10px/1.6 'Manrope',sans-serif;letter-spacing:.16em;color:var(--ir-gold)}
+.irAction{display:inline-flex;align-items:center;min-height:46px;padding:13px 19px;border:1px solid var(--ir-gold);color:var(--ir-ivory);font:700 10px/1.5 'Manrope',sans-serif;letter-spacing:.13em;text-decoration:none;transition:background .2s,color .2s}
+.irAction:hover,.irAction:focus-visible{background:var(--ir-gold);color:var(--ir-obsidian)}
+.irListening{display:flex;justify-content:space-between;align-items:center;gap:28px;padding:65px 8%;border-top:1px solid var(--ir-line);border-bottom:1px solid var(--ir-line);background:#171717}
+.irListening h2{font:400 clamp(42px,5vw,75px)/1 'Instrument Serif',serif;margin:12px 0}
+.irListening h2 em{color:#d4b895}
+.irListening p{font-size:13px;color:#b8b1a7;line-height:1.7}
+.irComing{font-size:10px;letter-spacing:.18em;color:#c8b393;border:1px solid #675846;padding:17px 22px;white-space:nowrap}
+:focus-visible{outline:2px solid var(--ir-gold);outline-offset:4px}
+@media(max-width:1050px){.page .nav{gap:12px;flex-wrap:wrap}.irArtistIndex{display:none}}
+@media(max-width:700px){.irNav{width:100%;order:3;gap:clamp(14px,5vw,30px);padding:10px 0 2px}.page .nav{padding:18px 6%}.irListening{flex-direction:column;align-items:flex-start;padding:55px 7%}.irListening h2{font-size:clamp(40px,11vw,64px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+.irMusic{padding:105px 8% 115px;background:#111214;border-top:1px solid var(--ir-line)}
+.irSectionHead{max-width:900px;margin-bottom:42px}
+.irSectionHead h2{font:400 clamp(50px,6vw,96px)/1.02 'Instrument Serif',serif;letter-spacing:-.025em;margin:0 0 18px}
+.irSectionHead h2 em,.irRelease h3 em{color:#d4b895}
+.irSectionHead>p:last-child{color:#b7afa5;line-height:1.7}
+.irReleaseGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.irRelease{display:grid;grid-template-columns:minmax(120px,38%) minmax(0,1fr);align-items:center;gap:24px;background:#1b1c1e;border:1px solid var(--ir-line);padding:22px;min-width:0}
+.irReleaseArt{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;background:#111416;overflow:hidden}
+.irReleaseArt img{width:100%;height:100%;object-fit:contain;object-position:center}
+.irRelease h3{font:400 clamp(28px,3vw,52px)/1.02 'Instrument Serif',serif;margin:12px 0;overflow-wrap:anywhere}
+.irRelease p{font-size:12px;color:#b7afa5;margin:0 0 24px}
+.irFootnote{font-size:11px;color:#8f8982;margin-top:24px}
+.site .nav{flex-wrap:wrap}
+.site .artistCard--oliver .artistVisual img{object-fit:contain!important;object-position:center!important;transform:none!important;background:#111416}
+.site .artistCard--oliver .artistVisual:hover img{transform:none!important}
+@media(max-width:900px){.irReleaseGrid{grid-template-columns:1fr}.site .nav .irNav{order:3}}
+@media(max-width:700px){.irMusic{padding:72px 6%}.irRelease{grid-template-columns:minmax(90px,35%) minmax(0,1fr);gap:16px;padding:14px}.irRelease h3{font-size:clamp(27px,7vw,42px)}.irRelease .irAction{padding:10px 12px;font-size:9px}.site .nav .irNav{width:100%}}
