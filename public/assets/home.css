@@ -163,3 +163,34 @@ html{scroll-behavior:smooth}body{margin:0;background:#151515;color:#F2EEE6}a:foc
 .artistCard--yoru .artistDetails h3 em{color:#c3cbd0}
 @media(max-width:800px){.artistCard--yoru .artistVisualBottom strong{font-size:clamp(64px,12vw,94px)}}
 @media(max-width:480px){.artistCard--yoru .artistVisualBottom strong{font-size:clamp(59px,13vw,77px)}}
+
+
+/* Imagined Records — cinematic editorial redesign 2026-11-19 */
+:root{--background:#0b0c0e;--foreground:#f1eee8;--surface:#151719;--card:#17191b;--accent:#c6a77d;--border:#39332e}
+body,.site{background:#0b0c0e;color:#f1eee8}
+.site .nav{background:rgba(11,12,14,.97);border-bottom:1px solid #34302c;min-height:86px;height:auto;gap:18px}
+.site .nav .logo,.footerLogo{letter-spacing:.16em}
+.site .nav a,.site .navLink{transition:color .2s}
+.site .nav a:hover{color:#d9bb93}
+.site .hero{background-position:center 43%;min-height:670px;max-height:950px}
+.site .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,7,9,.44),transparent 75%);pointer-events:none}
+.site .heroInner{z-index:2}
+.site .hero h1{font-size:clamp(66px,8vw,138px);letter-spacing:-.035em;text-wrap:balance}
+.site .hero h1 em,.site .intro h2 em,.site .story h2 em,.site footer h2 em{color:#c9b092}
+.site .eyebrow{color:#c6a77d}
+.site .outlineButton{border-color:#a88b69;background:rgba(8,9,11,.32);backdrop-filter:blur(8px)}
+.site .intro,.site .story{border-top:1px solid #2c2926;background:#101113}
+.site .artists{background:#0d0e10}
+.site .artistGrid{gap:clamp(20px,3vw,48px)}
+.site .artistCard{background:#17191b;border:1px solid #302d2b;overflow:hidden}
+.site .artistVisual{overflow:hidden;background:#16191d}
+.site .artistVisual img,.site .artistVisual .yoruRosterPhoto{object-fit:cover;object-position:center 29%;padding:0;filter:saturate(.84) brightness(.86)}
+.site .artistVisualShade{background:linear-gradient(180deg,rgba(5,6,7,.32),transparent 38%,rgba(5,6,7,.91))}
+.site .artistVisualBottom strong{font-family:'Instrument Serif',serif;font-weight:400;letter-spacing:-.035em}
+.site .artistDetails{background:#17191b}
+.site .artistFeatureLink,.site .artistVisualCue{color:#e6d9c8}
+.site .artistFeatureLink .arrowIcon,.site .artistVisualCue .arrowIcon{color:#c6a77d}
+.site .artistCard--yoru .artistVisual--yoru img.yoruRosterPhoto{object-fit:cover;object-position:center 25%;filter:saturate(.82) brightness(.88)}
+.site footer{background:#0b0c0e;border-top:1px solid #38312a}
+@media(max-width:800px){.site .hero{min-height:640px}.site .nav{padding-top:18px;padding-bottom:18px}.site .artistVisual img{object-position:center 26%}}
+@media(max-width:480px){.site .hero{min-height:650px}.site .hero h1{font-size:clamp(57px,13vw,79px)}.site .artistCard--yoru .artistVisual--yoru img.yoruRosterPhoto{object-position:center 22%}}
