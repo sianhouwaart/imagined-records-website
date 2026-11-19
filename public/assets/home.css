@@ -194,3 +194,8 @@ body,.site{background:#0b0c0e;color:#f1eee8}
 .site footer{background:#0b0c0e;border-top:1px solid #38312a}
 @media(max-width:800px){.site .hero{min-height:640px}.site .nav{padding-top:18px;padding-bottom:18px}.site .artistVisual img{object-position:center 26%}}
 @media(max-width:480px){.site .hero{min-height:650px}.site .hero h1{font-size:clamp(57px,13vw,79px)}.site .artistCard--yoru .artistVisual--yoru img.yoruRosterPhoto{object-position:center 22%}}
+
+/* Portrait-safe framing: never crop YORU's head on roster cards. */
+.site .artistCard--yoru .artistVisual--yoru{background:#101316}
+.site .artistCard--yoru .artistVisual--yoru img.yoruRosterPhoto{object-fit:contain!important;object-position:center center!important;transform:none!important}
+.site .artistCard--yoru .artistVisual--yoru:hover img.yoruRosterPhoto,.site .artistCard--yoru .artistVisual--yoru:focus-visible img.yoruRosterPhoto{transform:none!important}
