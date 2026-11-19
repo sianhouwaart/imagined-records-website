@@ -148,3 +148,23 @@ body,.page{background:#0b0c0e;color:#f1eee8}
 .page .photo{background:#101316}
 .page .photo img{object-fit:contain!important;object-position:center center!important}
 .page .portraitGrid img{object-fit:contain!important;object-position:center center!important}
+
+
+/* IR Editorial System v3: shared navigation, music discovery, and accessible responsiveness */
+:root{--ir-obsidian:#0b0c0e;--ir-ivory:#f1eee8;--ir-gold:#c6a77d;--ir-line:#3b3530}
+.irNav{display:flex;align-items:center;justify-content:center;gap:clamp(12px,2vw,30px);flex-wrap:wrap}
+.irNav a{font:600 10px/1.4 'Manrope',sans-serif;letter-spacing:.13em;color:#d9d2c7;text-decoration:none;transition:color .2s}
+.irNav a:hover,.irNav a:focus-visible{color:var(--ir-gold)}
+.irArtistIndex{font-size:9px;letter-spacing:.1em;color:#b5a89a}
+.irKicker{font:700 10px/1.6 'Manrope',sans-serif;letter-spacing:.16em;color:var(--ir-gold)}
+.irAction{display:inline-flex;align-items:center;min-height:46px;padding:13px 19px;border:1px solid var(--ir-gold);color:var(--ir-ivory);font:700 10px/1.5 'Manrope',sans-serif;letter-spacing:.13em;text-decoration:none;transition:background .2s,color .2s}
+.irAction:hover,.irAction:focus-visible{background:var(--ir-gold);color:var(--ir-obsidian)}
+.irListening{display:flex;justify-content:space-between;align-items:center;gap:28px;padding:65px 8%;border-top:1px solid var(--ir-line);border-bottom:1px solid var(--ir-line);background:#171717}
+.irListening h2{font:400 clamp(42px,5vw,75px)/1 'Instrument Serif',serif;margin:12px 0}
+.irListening h2 em{color:#d4b895}
+.irListening p{font-size:13px;color:#b8b1a7;line-height:1.7}
+.irComing{font-size:10px;letter-spacing:.18em;color:#c8b393;border:1px solid #675846;padding:17px 22px;white-space:nowrap}
+:focus-visible{outline:2px solid var(--ir-gold);outline-offset:4px}
+@media(max-width:1050px){.page .nav{gap:12px;flex-wrap:wrap}.irArtistIndex{display:none}}
+@media(max-width:700px){.irNav{width:100%;order:3;gap:clamp(14px,5vw,30px);padding:10px 0 2px}.page .nav{padding:18px 6%}.irListening{flex-direction:column;align-items:flex-start;padding:55px 7%}.irListening h2{font-size:clamp(40px,11vw,64px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
